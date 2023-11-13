@@ -1,0 +1,30 @@
+GET http://localhost:3000/movies
+
+### Solicitar por id
+GET http://localhost:3000/movies/0114a9d2-daa6-4bb7-99e2-2992c750cb83
+
+### Buscar por generos de peliculas
+GET http://localhost:3000/movies?genre=DRAMA
+
+### Crear una pelicula con post
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Fornite",
+    "year": 2022,
+    "director": "Gerar Arevalo",
+    "duration": 120,
+    "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+    "genre": ["Drama"],
+    "rate": 9.0  
+}
+
+### Actualizar una pelicula 
+PATCH http://localhost:3000/movies/dcdd0fad-a94c-4810-8acc-5f108d3b18c3
+Content-Type: application/json
+
+{
+    "title": "FORNITEEEEEEEE"
+}
+
