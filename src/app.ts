@@ -16,7 +16,7 @@ app.use(express.json());
 
 //Buscar por generos de peliculas o todas las peliculas
 app.get("/movies", (req, res) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:8080");
+  res.header("Access-Control-Allow-Origin", "*");
 
   const { genre } = req.query;
   if (typeof genre === "string") {
