@@ -1,5 +1,5 @@
 import express from "express";
-import movies from "../movies.json";
+import movies from "./movies.json";
 import crypto from "crypto";
 import { validateMovie, validateParcialMovie } from "./types";
 
