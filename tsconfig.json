@@ -11,6 +11,6 @@
     "skipLibCheck": true,
     "noImplicitAny": false // Agregado para permitir tipos implícitos 'any'
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "movies.json"],
   "exclude": ["node_modules"]
 }
