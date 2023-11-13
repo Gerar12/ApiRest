@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "strict": true,
     "skipLibCheck": true,
-    "noImplicitAny": false // Agregado para permitir tipos implícitos 'any'
+    "noImplicitAny": false
   },
-  "include": ["src/**/*", "movies.json"],
+  "include": ["src/**/*", "./movies.json"],
   "exclude": ["node_modules"]
 }
